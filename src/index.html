@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaman's Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+    <script src="./javascript/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">CHAMAN</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="./pages/signup.html" class="btn signup">Sign Up</a>
+            <a href="./pages/login.html" class="btn login">Login</a>
+        </div>
+    </header>
+    
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <!-- Left Side: Profile Image -->
+            <div class="hero-image">
+                <img src="./assets/profile-pic.jpg" class="profile-pic" alt="Chaman's Profile Picture">
+            </div>
+    
+            <!-- Right Side: Hero Text -->
+            <div class="hero-content">
+                <h1 class="hero-title">Welcome to My Portfolio</h1> <br>
+                <p>Hi, I'm <strong>Chaman</strong> Crafting intelligent web solutions with AI <br> and modern technology. Let's build something smart, fast, and future-ready!</p>
+                <a href="#contact" class="btn vip-btn">Hire Me</a>
+            </div>
+        </div>
+    
+    </section>
+
+    <!-- VIP High-Level Animated Section -->
+    <section id="skills" class="vip-section">
+        <h2>My Experience & Achievements</h2>
+        <br>
+        <div class="vip-container">
+            <div class="vip-card">
+                <i class="fas fa-code"></i>
+                <h3>1+ Years of Experience</h3>
+                <p>Expert in Web Development & AI Solutions.</p>
+            </div>
+            <div class="vip-card">
+                <i class="fas fa-trophy"></i>
+                <h3>Web-development Certified</h3>
+                <p>Recognized by I Hunar IT Company.</p>
+            </div>
+            <div class="vip-card">
+                <i class="fas fa-rocket"></i>
+                <h3>20+ Projects Completed</h3>
+                <p>Delivering Quality & Innovation Globally.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="about">
+        <div class="about-container">
+            <h2 class="section-title">About Me</h2>
+            <p class="about-text">I am Chaman, a Web Developer & AI Expert. Passionate about coding, design, and AI technology.</p>
+            
+            <div class="cards">
+                <div class="card">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Experienced in modern web technologies like HTML, CSS, JavaScript, and React.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-brain"></i>
+                    <h3>AI & Machine Learning</h3>
+                    <p>Building intelligent applications using AI and Machine Learning technologies.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-palette"></i>
+                    <h3>Creative Design</h3>
+                    <p>Crafting visually appealing and user-friendly UI/UX designs.</p>
+                </div>
+            </div>
+    
+            <a href="#projects" class="btn vip-btn">Learn More</a>
+        </div>
+    </section>
+    
+    <!-- Projects Section (Placeholder) -->
+    <section id="projects" class="vip-section">
+        <h2>My Projects</h2>
+        <br>
+        <div class="vip-container">
+            <div class="vip-card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>E-Commerce Platform</h3>
+                <p>A fully responsive online store with payment integration.</p>
+            </div>
+            <div class="vip-card">
+                <i class="fas fa-robot"></i>
+                <h3>AI Chatbot</h3>
+                <p>Intelligent conversational agent for customer support.</p>
+            </div>
+            <div class="vip-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Mobile App</h3>
+                <p>Cross-platform application for task management.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section (Placeholder) -->
+    <section id="contact" class="about">
+        <div class="about-container">
+            <h2 class="section-title">Contact Me</h2>
+            <p class="about-text">Interested in working together? Feel free to reach out!</p>
+            
+            <div class="cards">
+                <div class="card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>contact@chaman.dev</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone</h3>
+                    <p>+923433125593</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Location</h3>
+                    <p>Islamabad, Pakistan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Advanced Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            
+            <!-- Left Section: About -->
+            <div class="footer-about">
+                <h2>My Portfolio</h2> <br>
+                <p>Innovating the future with AI & Web Development.</p>
+            </div>
+
+            <!-- Middle Section: Quick Links -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">🏠 Home</a></li>
+                    <li><a href="#about">🧑‍💻 About</a></li>
+                    <li><a href="#projects">🚀 Projects</a></li>
+                    <li><a href="#contact">📩 Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Right Section: Social Media -->
+            <div class="footer-social">
+                <h3>Follow Me</h3>
+                <div class="social-icons">
+                    <a href="https://github.com/chanderkesani">
+                        <i class="fab fa-github"></i> GitHub: chanderkesani
+                    </a>
+                    <a href="https://ihunar.com/">
+                        <i class="fas fa-building"></i> Company: ihunar.com
+                    </a>
+                    <a href="whatsapp://send?phone=+923433125593">
+                        <i class="fab fa-whatsapp"></i> WhatsApp: +923433125593
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>© 2025 My Portfolio | All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>

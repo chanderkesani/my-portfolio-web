@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Chaman's Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/auth.css">
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+    <script src="../javascript/auth.js"></script>
+</head>
+<body class="auth-page">
+    <div class="auth-background">
+        <div class="auth-container">
+            <div class="auth-form-wrapper">
+                <a href="../index.html" class="logo-link">CHAMAN</a>
+                <h1>Welcome Back</h1>
+                <p class="auth-description">Login to your account to continue</p>
+                
+                <form id="login-form" class="auth-form">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter your password" required>
+                        <a href="#" class="forgot-password">Forgot password?</a>
+                    </div>
+                    
+                    <div class="error-message" id="error-display"></div>
+                    <div class="success-message" id="success-display"></div>
+                    
+                    <button type="submit" class="form-btn">Login</button>
+                </form>
+                
+                <div class="auth-divider">
+                    <span>OR</span>
+                </div>
+                
+                <button class="social-btn google-btn">
+                    <img src="../assets/google-icon.svg" alt="Google">
+                    Login with Google
+                </button>
+                
+                <div class="switch-form">
+                    Don't have an account? <a href="signup.html">Sign Up</a>
+                </div>
+            </div>
+            
+            <div class="auth-image">
+                <div class="image-overlay"></div>
+                <div class="auth-message">
+                    <h2>Welcome Back!</h2>
+                    <p>Login to manage your projects and stay connected.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
