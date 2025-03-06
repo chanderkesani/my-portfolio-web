@@ -1,6 +1,5 @@
-
 import { useState, useEffect } from "react";
-import { GitHub, Linkedin, Instagram, Twitter, Mail, Phone, MapPin, Award, Code, Database, Server, CheckCircle } from "lucide-react";
+import { Github, Linkedin, Instagram, Twitter, Mail, Phone, MapPin, Award, Code, Database, Server, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -9,7 +8,6 @@ const Index = () => {
   const [activeSection, setActiveSection] = useState("home");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  // Handle scroll to set active nav item
   useEffect(() => {
     const handleScroll = () => {
       const sections = document.querySelectorAll("section");
@@ -47,14 +45,12 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-900 to-slate-800 text-white">
-      {/* Header/Navbar */}
       <header className="fixed top-0 left-0 w-full bg-slate-900/90 backdrop-blur-sm z-50 shadow-md">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-500">
             CHAMAN
           </div>
           
-          {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             {["home", "about", "skills", "certifications", "services", "contact"].map((item) => (
               <button
@@ -69,7 +65,6 @@ const Index = () => {
             ))}
           </nav>
           
-          {/* Mobile Menu Button */}
           <button 
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="md:hidden text-gray-200 hover:text-red-500 transition-colors"
@@ -82,27 +77,23 @@ const Index = () => {
           </button>
         </div>
         
-        {/* Mobile Navigation */}
-        {isMobileMenuOpen && (
-          <div className="md:hidden bg-slate-800 py-4 px-4 animate-fade-in">
-            <div className="flex flex-col space-y-4">
-              {["home", "about", "skills", "certifications", "services", "contact"].map((item) => (
-                <button
-                  key={item}
-                  onClick={() => scrollToSection(item)}
-                  className={`capitalize text-sm font-medium transition-colors hover:text-red-400 ${
-                    activeSection === item ? "text-red-500" : "text-gray-300"
-                  }`}
-                >
-                  {item}
-                </button>
-              ))}
-            </div>
+        <div className="md:hidden bg-slate-800 py-4 px-4 animate-fade-in">
+          <div className="flex flex-col space-y-4">
+            {["home", "about", "skills", "certifications", "services", "contact"].map((item) => (
+              <button
+                key={item}
+                onClick={() => scrollToSection(item)}
+                className={`capitalize text-sm font-medium transition-colors hover:text-red-400 ${
+                  activeSection === item ? "text-red-500" : "text-gray-300"
+                }`}
+              >
+                {item}
+              </button>
+            ))}
           </div>
-        )}
+        </div>
       </header>
 
-      {/* Hero Section */}
       <section id="home" className="min-h-screen pt-28 pb-20 flex items-center">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-between gap-10">
@@ -146,7 +137,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* About Section */}
       <section id="about" className="py-20 bg-slate-800/50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
@@ -191,7 +181,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Skills Section */}
       <section id="skills" className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
@@ -232,7 +221,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Certifications Section */}
       <section id="certifications" className="py-20 bg-slate-800/50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
@@ -299,7 +287,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Services Section */}
       <section id="services" className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
@@ -343,7 +330,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
       <section id="contact" className="py-20 bg-slate-800/50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
@@ -393,7 +379,7 @@ const Index = () => {
                     rel="noopener noreferrer"
                     className="bg-slate-700 p-3 rounded-full hover:bg-red-500 transition-colors"
                   >
-                    <GitHub className="w-5 h-5" />
+                    <Github className="w-5 h-5" />
                   </a>
                   <a 
                     href="https://linkedin.com/in/chander-kumar" 
@@ -543,7 +529,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="py-10 bg-slate-900 border-t border-slate-800">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
